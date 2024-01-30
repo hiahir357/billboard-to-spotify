@@ -66,10 +66,10 @@ for song, artist, index in zip(song_titles, song_artists, range(len(song_titles)
         q=f"track: {song} artist: {artist} year: {year}", type="track", market="VE"
     )
 
-    found_song = result["tracks"]["items"][0]["name"]
-    found_artist = result["tracks"]["items"][0]["artists"][0]["name"]
-
     try:
+        found_song = result["tracks"]["items"][0]["name"]
+        found_artist = result["tracks"]["items"][0]["artists"][0]["name"]
+
         uri = result["tracks"]["items"][0]["uri"]
         song_uris.append(uri)
 

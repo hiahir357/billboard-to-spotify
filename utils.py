@@ -18,7 +18,8 @@ class DateFormatException(Exception):
 def is_date_range_valid(date: str) -> bool:
     """
     Returns True if the date argument is correctly formated according to the format YYYY-MM-DD and the date
-    is between 1955 and the past day of today date, otherwise raises DateFormatException error
+    is between 1955 and yesterday date. If date format is not correct it raise DateFormatException. 
+    If date is not between the range it returns False
     """
     pattern = r"[\d]{4}-[\d]{2}-[\d]{2}"
     match = re.match(pattern, date)
