@@ -29,7 +29,7 @@ Instalation
 
 ```cmd
 # Clone the repo on your current cwd
-git clone git@github.com:JhonatanMustiolaCas/billboard-to-spotify
+git clone git@github.com:hiahir357/billboard-to-spotify
 
 # Go to the repo folder
 cd billboard-to-spotify
